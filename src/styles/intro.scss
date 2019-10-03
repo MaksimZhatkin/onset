@@ -6,8 +6,7 @@
 	background: center right no-repeat url('../img/intro-img.png');
 
 	&__content {
-		flex-basis: 50%;
-
+		max-width: 550px
 	}
 
 	&__title {
