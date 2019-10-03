@@ -1,0 +1,30 @@
+.button {
+	padding: 6px 15px;
+	font-weight: bold;
+
+	&_intro {
+		padding: 13px 22px
+	}
+
+	&_blue {
+		border: solid 3px $primary-color;
+		background-color: $white;
+		transition: color .3s ease, background-color .3s ease;
+
+		&:hover {
+			color: $white;
+			background-color: $primary-color;
+		}
+	}
+
+	&-black {
+		border: solid 3px $black;
+		background-color: $white;
+		transition: color .3s ease, background-color .3s ease;
+
+		&:hover {
+			color: $white;
+			background-color: $black;
+		}
+	}
+}

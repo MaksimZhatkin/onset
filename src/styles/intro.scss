@@ -1,0 +1,25 @@
+.intro {
+	display: flex;
+	align-items: center;
+	height: 700px;
+	margin-bottom: 100px;
+	background: center right no-repeat url('../img/intro-img.png');
+
+	&__content {
+		flex-basis: 50%;
+
+	}
+
+	&__title {
+		font-size: 48px;
+		margin-bottom: 47px;
+		background-color: $white;
+	}
+
+	&__about {
+		font-weight: 300;
+		font-size: 20px;
+		background-color: $white;
+		margin-bottom: 69px;
+	}
+}

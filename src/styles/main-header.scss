@@ -1,0 +1,30 @@
+.main-header {
+	width: 100%;
+	top: 0;
+	position: sticky;
+
+	border-bottom: solid 2px #eee;
+
+	background-color: $white;
+	z-index: 999;
+}
+
+.main-logo {
+	width: 160px;
+	height: 32px;
+}
+
+.main-nav {
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 19px 0;
+
+		&__item{
+			font-weight: 600;
+			letter-spacing: 1.3px;
+		}
+	}
+}

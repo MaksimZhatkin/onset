@@ -1,0 +1,45 @@
+.container {
+	width: 100%;
+	max-width: 1120px;
+	padding: 0 1%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.flex-center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blue-text {
+	color: $primary-color;
+}
+
+.dots-bg {
+	background: round center url('../svg/dots.svg');
+}
+
+.title {
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 38px;
+	position: relative;
+
+	&::after {
+		content: "";
+		background: no-repeat url("../svg/snake-1.svg");
+		width: calc(100% + 46px);
+		height: 16px;
+		position: absolute;
+		left: -23px;
+		bottom: -20px;
+	}
+}
+
+.subtitle {
+		text-align: center;
+		font-weight: 300;
+		font-size: 20px;
+		margin-bottom: 28px;
+}
