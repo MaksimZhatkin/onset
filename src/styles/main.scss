@@ -1,8 +1,11 @@
+html {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 15px;
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 14px;
 }
 
 * {
@@ -29,3 +32,7 @@ ul {
 @import "main-header.scss";
 @import "intro.scss";
 @import "features.scss";
+@import "stages.scss";
+@import "advantages.scss";
+@import "main-footer.scss";
+@import "secondary-footer.scss";

@@ -1,56 +1,69 @@
 .features {
+margin-bottom: 114px;
 
+	&__title {
+		&::after {
+			content: "";
+			background: no-repeat url("../svg/snake-1.svg");
+			width: 538px;
+			height: 17px;
+			position: absolute;
+			left: 52px;
+			bottom: -20px;
+		}
+	}
 
 	&__subtitle {
-		max-width: 650px;
+		max-width: 43.3rem;
 	}
 
 	&-list {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		flex-direction: row;
 		flex-wrap: wrap;
+		
 		position: relative;
 
 		&::before {
 			content: " ";
-
 			width: 300px;
 			height: 300px;
-
 			position: absolute;
 			z-index: -1;
 			top: -130px;
 			left: -175px;
-
 			background: repeating-linear-gradient(to top left,
-									$primary-color, $primary-color 6px, white 6px, white 12px);
+									 $primary-color, $primary-color 6px,
+									 white 6px, white 12px);
 			border-radius: 50%;
 		}
 	}
 
 	&-card {
 		border: solid 4px $black;
-		flex-basis: 260px;
+		background-color: $white;
 		display: flex;
 		flex-direction: column;
+		max-width: 17.333rem;
 		align-items: center;
-		padding-bottom: 20px;
-		background-color: $white;
+		padding-bottom: 1.333rem;
+		margin: 0.333rem 0.333rem;
 	}
 
 	&-description {
 		text-align: center;
 
 		&__title {
-			font-size: 20px;
+			font-size: 1.466rem;
 			font-weight: 400;
-			margin-bottom: 11px;
+			margin-bottom: 0.733rem;
+			text-align: center;
 		}
 
 		&__subtitle {
 			font-weight: 300;
-			font-size: 18px;
+			font-size: 1.2rem;
 		}
 	}
 }

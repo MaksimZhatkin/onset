@@ -1,24 +1,24 @@
 .intro {
 	display: flex;
 	align-items: center;
-	height: 700px;
-	margin-bottom: 100px;
-	background: center right no-repeat url('../img/intro-img.png');
+	height: 46.666rem;
+	margin-bottom: 7.6rem;
+	background: center right  no-repeat url('../img/intro-img.png');
 
 	&__content {
-		max-width: 550px
+		max-width: 46rem;
 	}
 
 	&__title {
-		font-size: 48px;
-		margin-bottom: 47px;
-		background-color: $white;
+		font-size: 5.333rem;
+		margin-bottom: 2.533rem;
 	}
 
 	&__about {
 		font-weight: 300;
-		font-size: 20px;
-		background-color: $white;
-		margin-bottom: 69px;
+		font-size: 1.6rem;
+		margin-bottom: 2.533rem;
+		max-width: 33.333rem;
+		line-height: 2.8rem;
 	}
 }

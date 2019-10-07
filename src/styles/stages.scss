@@ -1,0 +1,19 @@
+.stages {
+margin-bottom: 9.333rem;
+
+	&__title {
+		&::after {
+			content: "";
+			background: no-repeat url("../svg/snake-2.svg");
+			width: 307px;
+			height: 17px;
+			position: absolute;
+			left: 28px;
+			bottom: -20px;
+		}
+	}
+
+	&__subtitle {
+		max-width: 60.666rem;
+	}
+}

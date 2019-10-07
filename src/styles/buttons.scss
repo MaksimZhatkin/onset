@@ -1,10 +1,11 @@
 .button {
-	padding: 6px 15px;
+	display: inline-block;
+	padding: 0.4rem 1rem;
 	font-weight: bold;
 	text-align: center;
 
 	&_intro {
-		padding: 13px 22px
+		padding: 0.866rem 1.466rem;
 	}
 
 	&_blue {

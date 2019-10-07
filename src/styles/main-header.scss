@@ -2,9 +2,7 @@
 	width: 100%;
 	top: 0;
 	position: sticky;
-
-	border-bottom: solid 2px #eee;
-
+	border-bottom: 2px solid #eee;
 	background-color: $white;
 	z-index: 999;
 }
@@ -18,9 +16,10 @@
 
 	&-list {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 19px 0;
+		padding: 1.266rem 0;
 
 		&__item{
 			font-weight: 600;

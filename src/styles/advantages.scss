@@ -1,0 +1,59 @@
+.advantages {
+padding-top: 2rem;
+padding-bottom: 11.333rem;
+
+	&__title {
+		&::after {
+				content: "";
+				background: no-repeat url("../svg/snake-3.svg");
+				width: 197px;
+				height: 17px;
+				position: absolute;
+				left: 25px;
+				bottom: -20px;
+		}
+	}
+
+	&__subtitle {
+		max-width: 60rem;
+	}
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&-card {
+		position: relative;
+		border: 4px solid $black;
+		background-color: $white;
+		margin: 1rem 0.7rem;
+		max-width: 23.333rem;
+		padding: 2.2rem 1.355rem;
+
+		&:last-child::after {
+			content: "";
+			position: absolute;
+			background: no-repeat center url("../svg/snake-4.svg"), $white;
+			width: 153px;
+			height: 52px;
+			right: 27px;
+			bottom: -27px;
+		}
+
+		&__title {
+				font-size: 1.466rem;
+				font-weight: 400;
+				margin-bottom: 1.866rem;
+				text-align: center;
+		}
+
+		&__description {
+			font-size: 1.2rem;
+			font-weight: 300;
+			line-height: 1.6rem;
+			margin-bottom: 1.6rem;
+		}
+	}
+}
