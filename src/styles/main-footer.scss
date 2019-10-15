@@ -1,3 +1,90 @@
-.footer {
-	
+.main-footer {
+margin-bottom: 3.466rem;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-size: 1.866rem;
+		margin-bottom: 2.8rem;
+	}
+
+	&-item {
+		width: 36rem;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__button {
+		display: block;
+		font-size: 1.333rem;
+		font-weight: 400;
+	}
+
+	&-contacts {
+		font-size: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 260px;
+
+		&__item {
+			display: flex;
+			position: relative;
+
+			&_tel::before {
+				content: " ";
+				background: no-repeat url("../svg/telephone-icon.svg");
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: -38px;
+			}
+
+			&_mail::before {
+				content: " ";
+				background: no-repeat url("../svg/mail-icon.svg");
+				position: absolute;
+				width: 30px;
+				height: 29px;
+				left: -38px;
+				top: 3px;
+			}
+		}
+	}
+
+	&-social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&__icon {
+			display: inline-block;
+		}
+
+		&__icon + &__icon {
+			margin-left: 3rem;
+		}
+	}
+}
+
+.form-order {
+	&__input {
+		background-color: $gray;
+		display: block;
+		padding: 1rem 0;
+		width: 100%;
+		margin-bottom: 2.466rem;
+
+		font-family: "Roboto", "Arial", sans-serif;
+		font-weight: 300;
+		font-size: 1.2rem;
+		font-style: italic;
+		text-align: center;
+		cursor: pointer;
+	}
 }
