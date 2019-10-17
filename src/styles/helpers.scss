@@ -1,7 +1,16 @@
+.wrapper {
+	padding-top: 2rem;
+	padding-bottom: 9.333rem;
+
+	&_dots-bg {
+		background: round center url('../svg/dots.svg');
+	}
+}
+
+
 .container {
 	width: 100%;
 	max-width: 1140px;
-	padding: 0 0.8rem;
 	margin: 0 auto;
 	position: relative;
 }
@@ -14,10 +23,6 @@
 
 .blue-text {
 	color: $primary-color;
-}
-
-.dots-bg {
-	background: round center url('../svg/dots.svg');
 }
 
 .title {
