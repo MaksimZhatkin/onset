@@ -1,15 +1,8 @@
 .stages {
-
-	&__title {
-		&::after {
-			content: "";
-			background: no-repeat url("../svg/snake-2.svg");
-			width: 307px;
-			height: 17px;
-			position: absolute;
-			left: 28px;
-			bottom: -20px;
-		}
+	&__line {
+		background: no-repeat url("../svg/snake-2.svg");
+		width: 252px;
+		height: 17px;
 	}
 
 	&__subtitle {

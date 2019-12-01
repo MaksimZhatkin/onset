@@ -1,12 +1,9 @@
 .wrapper {
-	padding-top: 2rem;
-	padding-bottom: 9.333rem;
-
+	padding: 2rem 0.6rem 9.333rem;
 	&_dots-bg {
 		background: round center url('../svg/dots.svg');
 	}
 }
-
 
 .container {
 	width: 100%;
@@ -28,9 +25,12 @@
 .title {
 	font-size: 2.4rem;
 	font-weight: 500;
-	margin-bottom: 1.866rem;
 	position: relative;
 	text-align: center;
+}
+
+.line {
+	margin-bottom: 1.866rem;
 }
 
 .subtitle {

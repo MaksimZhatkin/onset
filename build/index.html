@@ -14,11 +14,11 @@
 			<nav class="main-nav">
 				<ul class="main-nav-list">
 
-					<li class="main-nav-list__item">
-						<a href="#intro">
-							<img src="svg/main-logo.svg" alt="onset-logo" class="main-logo">
-						</a>
-					</li>
+				<li class="main-nav-list__item_logo">
+					<a href="#intro">
+						<img src="svg/main-logo.svg" alt="onset-logo" class="main-logo">
+					</a>
+				</li>
 
 
 					<li class="main-nav-list__item">
@@ -42,9 +42,41 @@
 						</p>
 					</li>
 
+					<button class="menu-mob-tgl active">
+						<span class="menu-mob-tgl__element"></span>
+						<span class="menu-mob-tgl__element"></span>
+						<span class="menu-mob-tgl__element"></span>
+					</button>
 				</ul>
 			</nav>
 
+
+			<nav class="main-nav_mob hidden">
+				<ul class="main-nav-list_mob">
+
+					<li class="main-nav-list__item_mob">
+						<a href="#stages">ЭТАПЫ РАБОТЫ</a>
+					</li>
+
+
+					<li class="main-nav-list__item_mob">
+						<a href="#advantages">ПРОЕКТЫ</a>
+					</li>
+
+
+					<li class="main-nav-list__item_mob">
+						<a href="#contacts">КОНТАКТЫ</a>
+					</li>
+
+
+					<li class="main-nav-list__item_mob">
+						<p class="button button_blue">
+							<a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+						</p>
+					</li>
+
+				</ul>
+			</nav>
 		</div>
 	</header>
 
@@ -54,7 +86,7 @@
 			<section class="intro container">
 				<div class="intro__content">
 					<h1 class="intro__title">
-						<span class="blue-text">Продающий</span><br> лендинг под ключ
+						<span class="blue-text">Продающий</span> лендинг под ключ
 					</h1>
 					<p class="intro__about">
 						Мы – студия создания одностраничных сайтов, которая
@@ -76,6 +108,8 @@
 					<h2 class="features__title title">
 						Идеальный сайт для Вашего бизнеса
 					</h2>
+					<div class="features__line line"></div>
+
 
 					<p class="features__subtitle subtitle">
 						Лендинг, или одностраничный сайт, давно стал бюджетной и эффективной альтернативой  большим и дорогостоящим сайтам. Что именно качественный лендинг может принести Вашему бизнесу?
@@ -141,9 +175,10 @@
 			<section class="stages container">
 				<div class="flex-center">
 				<a name="stages"></a>
-					<h1 class="stages__title title">
+					<h2 class="stages__title title">
 						Как мы работаем?
-					</h1>
+					</h2>
+					<div class="stages__line line"></div>
 
 					<p class="stages__subtitle subtitle">
 						За несколько этапов, пройденных с нами, вы получите уникальный, удобный, продающий лендинг. Вам останется только получать удовольствие.<br> Работа проходит в 4 этапа:
@@ -158,9 +193,10 @@
 			<section class="advantages container">
 				<div class="flex-center">
 					<a name="advantages"></a>
-					<h1 class="advantages__title title">
+					<h2 class="advantages__title title">
 						Наши проекты
-					</h1>
+					</h2>
+					<div class="advantages__line line"></div>
 
 					<p class="advantages__subtitle subtitle">
 						Мы - молодая студия, и хотя мы не можем похвастаться богатым портфолио, нам есть что вам предложить!
@@ -279,4 +315,5 @@
 	</footer>
 
 </body>
+<script src="js/main.js"></script>
 </html>

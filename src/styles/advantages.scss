@@ -1,15 +1,9 @@
 .advantages {
 
-	&__title {
-		&::after {
-				content: "";
-				background: no-repeat url("../svg/snake-3.svg");
-				width: 197px;
-				height: 17px;
-				position: absolute;
-				left: 25px;
-				bottom: -20px;
-		}
+	&__line {
+		background: no-repeat url("../svg/snake-3.svg");
+		width: 197px;
+		height: 17px;
 	}
 
 	&__subtitle {

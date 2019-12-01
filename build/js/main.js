@@ -1,0 +1,1 @@
+const btn=document.querySelector(".menu-mob-tgl"),menu=document.querySelector(".main-nav_mob");btn.addEventListener("click",()=>{menu.classList.toggle("hidden")});

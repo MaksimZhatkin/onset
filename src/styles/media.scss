@@ -1,0 +1,53 @@
+@media (max-width: 930px) {
+	.main-nav-list__item{
+		display: none;
+	}
+
+	.menu-mob-tgl {
+		display: inline-block;
+	}
+
+	.intro {
+	background: none;
+	}
+}
+
+
+@media (max-width: 670px) {
+	.features{
+		&__line {
+			width: 370px;
+			background: no-repeat url("../svg/snake-1-670px.svg");
+		}
+	}
+}
+
+
+@media (max-width: 570px) {
+	.intro{
+		flex-direction: row-reverse;
+
+		&__content {
+			max-width: 19.666rem;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		&__about {
+			font-size: 1rem;
+			line-height: 1.8rem;
+		}
+	}
+}
+
+
+@media (max-width: 520px) {
+	.features{
+		&__line {
+			width: 313px;
+			background: no-repeat url("../svg/snake-1-520px.svg");
+		}
+	}
+}
