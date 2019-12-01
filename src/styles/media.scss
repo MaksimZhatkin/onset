@@ -6,10 +6,6 @@
 	.menu-mob-tgl {
 		display: inline-block;
 	}
-
-	.intro {
-	background: none;
-	}
 }
 
 
@@ -39,6 +35,11 @@
 			font-size: 1rem;
 			line-height: 1.8rem;
 		}
+	}
+
+	.intro {
+		background: center left  no-repeat url('../img/intro-img.png');
+		background-position: -285px 0;
 	}
 }
 
