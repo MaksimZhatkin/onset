@@ -4,7 +4,7 @@
 	position: sticky;
 	border-bottom: 2px solid #eee;
 	background-color: $white;
-	z-index: 999;
+	z-index: 1;
 	font-weight: 600;
 	letter-spacing: 1.3px;}
 
@@ -24,6 +24,7 @@
 		&__item {
 			&_logo {
 				margin-right: 20%;
+				font-size: 1rem;
 			}
 		}
 	}
@@ -51,22 +52,20 @@
 
 
 .menu-mob-tgl {
-	width: 40px;
-	height: 32px;
+	width: 51px;
+	height: 38px;
 	background-color: #fff;
 	cursor: pointer;
 	display: none;
+	border-radius: 5px;
+	padding: 5px;
 
 	&__element {
 		display: block;
 		width: 40px;
 		height: 4px;
 		margin: 4px 0;
-		background-color: #000;
+		background-color: $black;
 		border-radius: 25px;
 	}
-}
-
-.hidden {
-	top: -220px;
 }
