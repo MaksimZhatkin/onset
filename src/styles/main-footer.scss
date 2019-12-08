@@ -22,6 +22,7 @@ padding: 0 0.8rem;
 
 	&__button {
 		display: block;
+		width: 100%;
 		font-size: 1.333rem;
 		font-weight: 400;
 	}
@@ -71,22 +72,5 @@ padding: 0 0.8rem;
 		&__icon + &__icon {
 			margin-left: 3rem;
 		}
-	}
-}
-
-.form-order {
-	&__input {
-		background-color: $gray;
-		display: block;
-		padding: 1rem 0;
-		width: 100%;
-		margin-bottom: 2.466rem;
-
-		font-family: "Roboto", "Arial", sans-serif;
-		font-weight: 300;
-		font-size: 1.2rem;
-		font-style: italic;
-		text-align: center;
-		cursor: pointer;
 	}
 }

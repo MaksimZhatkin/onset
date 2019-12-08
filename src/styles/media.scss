@@ -6,6 +6,17 @@
 	.menu-mob-tgl {
 		display: inline-block;
 	}
+
+	.modal {
+		&-privacy {
+			padding: 1rem;
+
+			&__text {
+				font-size: .7rem;
+				line-height: 120%;
+			}
+		}
+	}
 }
 
 
@@ -51,4 +62,14 @@
 			background: no-repeat url("../svg/snake-1-520px.svg");
 		}
 	}
+}
+
+@media (max-width: 360px) {
+	.features{
+		&__line {
+			width: 252px;
+			background: no-repeat url("../svg/snake-2.svg");
+		}
+	}
+
 }

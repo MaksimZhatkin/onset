@@ -6,6 +6,7 @@
 
 	&__container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -22,6 +23,8 @@
 
 	&__link {
 		text-decoration: underline;
+		background: none;
+		color: $white;
 	}
 
 	&__left{

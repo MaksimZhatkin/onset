@@ -37,12 +37,12 @@
 
 
 					<li class="main-nav-list__item">
-						<p class="button button_blue">
-							<a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
-						</p>
+						<button class="button button_blue modal-button" data-order>
+							ЗАКАЗАТЬ ЗВОНОК
+						</button>
 					</li>
 
-					<button class="menu-mob-tgl active">
+					<button class="menu-mob-tgl">
 						<span class="menu-mob-tgl__element"></span>
 						<span class="menu-mob-tgl__element"></span>
 						<span class="menu-mob-tgl__element"></span>
@@ -70,9 +70,9 @@
 
 
 					<li class="main-nav-list__item_mob">
-						<p class="button button_blue">
-							<a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
-						</p>
+						<button class="button button_blue modal-button" data-order>
+							ЗАКАЗАТЬ ЗВОНОК
+						</button>
 					</li>
 
 				</ul>
@@ -93,9 +93,9 @@
 						помогает молодым компаниям вывести свой бизнес
 						в интернет без лишних хлопот.
 					</p>
-					<p class="button button_intro button_blue">
-						<a href="#">ЗАКАЗАТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
-					</p>
+					<button class="button button_intro button_blue modal-button" data-order>
+						ЗАКАЗАТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+					</button>
 				</div>
 			</section>
 		</div>
@@ -258,9 +258,9 @@
 					<input class="form-order__input" type="email" name="e-mail" placeholder="Ваш e-mail...">
 					<input class="form-order__input" type="tel" name="telephone-number" placeholder="Ваш номер телефона...">
 
-					<p class="main-footer__button button button_blue">
-						<a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
-					</p>
+					<button class="main-footer__button button button_blue">
+						ЗАКАЗАТЬ ЗВОНОК
+					</button>
 				</form>
 			</div>
 
@@ -308,11 +308,55 @@
 				</div>
 
 				<div class="secondary-footer__right">
-					<a href="#" class="secondary-footer__link">Политика конфиденциальности</a>
+					<button href="" class="secondary-footer__link privacy-link" data-privacy>
+						Политика конфиденциальности
+					</button>
 				</div>
 
 			</div>
 	</footer>
+
+	<div class="bg-modal modal-button visually-hidden" data-close_bg>
+		<div class="modal modal-order">
+			<button class="button button_close modal-button" data-close>
+				<img src="svg/close.svg" alt="cross" data-close>
+			</button>
+			<h2 class="modal__title">Обсудите разработку вашего Landing Page</h2>
+
+			<p class="modal__subtitle">Оставьте свои данные, и мы свяжемся с вами в течение получаса (ежедневно с 8:00 до 20:00):</p>
+
+			<form class="form-order" action="" method="post">
+				<input class="form-order__input" type="text" name="name" placeholder="Ваше имя...">
+				<input class="form-order__input" type="email" name="e-mail" placeholder="Ваш e-mail...">
+				<input class="form-order__input" type="tel" name="telephone-number" placeholder="Ваш номер телефона...">
+
+				<button class="main-footer__button button button_blue" >
+					<a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="bg-modal bg-modal-privacy modal-button visually-hidden" data-close_bg>
+		<div class="modal modal-privacy">
+			<button class="button button_close modal-button" data-close>
+				<img src="svg/close.svg" alt="cross" data-close>
+			</button>
+			<h2 class="modal__title">Политика конфиденциальности сайта</h2>
+
+			<p class="modal-privacy__text">
+				Настоящим подтверждаю, что я ознакомлен и согласен с условиями Политики в отношении обработки персональных данных.
+			</p>
+
+			<p class="modal-privacy__text">
+				Настоящим я даю разрешение Сайту в целях информирования о товарах и услугах, заключения и исполнения договора купли-продажи обрабатывать - собирать, записывать, систематизировать, накапливать, хранить, уточнять (обновлять, изменять), извлекать, использовать, передавать (в том числе поручать обработку другим лицам), обезличивать, блокировать, удалять, уничтожать - мои персональные данные: фамилию, имя, пол, дату рождения, номера домашнего и мобильного телефонов, адрес электронной почты, а также данные об интересах на основании анализа моих поисковых запросов и посещений Интернет-сайтов.
+			</p>
+
+			<p class="modal-privacy__text">
+				Также я разрешаю в целях информирования о товарах, работах, услугах направлять на указанный мною адрес электронной почты и/или на номер мобильного телефона рекламу и информацию о товарах, работах, услугах и его партнеров.
+			</p>
+		</div>
+	</div>
 
 </body>
 <script src="js/main.js"></script>

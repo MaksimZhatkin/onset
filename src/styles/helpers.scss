@@ -59,3 +59,33 @@
 		}
 	}
 }
+
+.form-order {
+	&__input {
+		background-color: $gray;
+		display: block;
+		padding: 1rem 0;
+		width: 100%;
+		margin-bottom: 2.466rem;
+
+		font-family: "Roboto", "Arial", sans-serif;
+		font-weight: 300;
+		font-size: 1.2rem;
+		font-style: italic;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+
+.hidden {
+	top: -220px;
+}
+
+.visually-hidden{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
