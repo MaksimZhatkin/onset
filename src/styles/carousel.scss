@@ -1,0 +1,56 @@
+.carousel {
+width: 100%;
+
+
+	&-slide {
+		max-width: 51rem;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 250%;
+
+		&__content {
+			font-weight: 300;
+			font-size: 1.466rem;
+			text-align: left;
+		}
+
+		&__heading {
+			font-size: 1.866rem;
+			font-weight: 400;
+			margin-bottom: 2rem;
+		}
+
+		&__text + &__text {
+			margin-top: 1.6rem;
+		}
+
+		&__list {
+			list-style: disc;
+		}
+	}
+
+	&-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 51rem;
+		margin: 0 auto;
+
+
+		&__item {
+			width: 160px;
+			height: 58px;
+			margin: 0 1rem 1.333rem;
+			font-weight: 400;
+		}
+
+		&-heading {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.current-slide {
+	background-color: $primary-color;
+	color: $white;
+}

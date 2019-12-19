@@ -1,17 +1,5 @@
 .features {
 
-	// &__title {
-	// 	&::after {
-	// 		content: "";
-	// 		background: no-repeat url("../svg/snake-1.svg");
-	// 		width: 538px;
-	// 		height: 17px;
-	// 		position: absolute;
-	// 		left: 52px;
-	// 		bottom: -20px;
-	// 	}
-	// }
-
 	&__line {
 		width: 538px;
 		height: 17px;
@@ -54,6 +42,7 @@
 		align-items: center;
 		padding-bottom: 1.333rem;
 		margin: 0.333rem 0.333rem;
+		overflow: hidden;
 	}
 
 	&-description {

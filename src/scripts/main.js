@@ -1,11 +1,13 @@
+// Mobile menu
 const menuBtn = document.querySelector('.menu-mob-tgl')
 const menu = document.querySelector('.main-nav_mob')
 
 menuBtn.addEventListener('click', () => {
 	menu.classList.toggle('hidden')
-});
+})
 
 
+// Modal windows
 const orderBtn = document.querySelectorAll('.modal-button')
 const orderModal = document.querySelector('.bg-modal')
 const privacyBtn = document.querySelector('.privacy-link')
@@ -22,13 +24,35 @@ document.addEventListener('click', (e) => {
 	}else if(e.target.dataset.close_bg != undefined) {
 		e.target.classList.toggle('visually-hidden')
 	}
+})
+
+
+// Carousel
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel-slide')
+const carouselButtons = document.querySelectorAll('.carousel-buttons__item')
+
+
+// When I press the #X button, slide #X opens and all other slides are hidden
+carousel.addEventListener('click', (e) => {
+	const tg = e.target
+	if (tg.closest('.carousel-buttons__item')) {
+		btnNum = tg.dataset.stage
+		showSlide(btnNum)
+	}
 });
 
+let showSlide = (n) => {
+	hideAllSlide()
+	slides[n].classList.remove('visually-hidden')
+	carouselButtons[n].classList.add('current-slide')
+}
 
-// privacyBtn.addEventListener('click', () => {
-// 	privacyModal.classList.toggle('visually-hidden')
-// })
-
-// orderBtn.children.addEventListener('click', () => {
-// 	orderModal.classList.toggle('visually-hidden')
-// })
+const hideAllSlide = () => {
+	slides.forEach((item) => {
+		item.classList.add('visually-hidden')
+	})
+	carouselButtons.forEach((item) => {
+		item.classList.remove('current-slide')
+	})
+}
